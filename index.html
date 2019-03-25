@@ -5,21 +5,13 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        
-        if($("#btn").val() == 1){
-            $("p").hide();
-            $("#btn").val(0);
-        }else{
-            $("p").show();
-            $("#btn").val(1);
-        }
-        
+        $("p").toggle();        
     });
 });
 </script>
 </head>
 <body>
-<button id="btn" value="1">click</button>
+<button>click</button>
 <p>If you click on me, I will disappear.</p>
 <p>Click me away!</p>
 <p>Click me too!</p>
